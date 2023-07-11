@@ -12,7 +12,7 @@ from numpy import exp, sqrt
 from scipy.integrate import quad
 from scipy.optimize import root,minimize
 
-"(01 define units)"
+# define units
 from typing import NewType
 mmHg = NewType('mmHg',float)
 kPa = NewType('kPa',float)
@@ -23,7 +23,7 @@ mL = NewType('mL',float)
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf']
 
 
-"(02 help functions)"
+# help functions
 def kpa_to_mmhg(p:kPa):
     "convert kpa to mmhg"
     return 7.50062*np.array(p)
@@ -36,7 +36,7 @@ def volume_of_sphere(r):
     "return the volume of a sphere"
     return 4/3*np.pi*r**3
 
-"(03 file related functions)"
+# "(03 file related functions)"
 def skip_nlines(fp,n):
     for i in range(n): 
         fp.readline()
@@ -68,7 +68,7 @@ def read_3columns(fp,i,j,k,is_csv = False):
     return np.array(a_list),np.array(b_list),np.array(c_list)
 
 
-"(04 statistic functions)"
+# "(04 statistic functions)"
 def MAE(v1,v2):
     "(Mean Absolute Error)"
     return sum(abs(v1-v2))/len(v1)
@@ -122,7 +122,7 @@ Vn1: Klotz method, Vn1 = (V-V0)/(V30-V0)
 Vn2: My mythod, Vn2 = V/V0
 """
 
-"(05 Volume Coversion)"
+# Volume Coversion
 def V_to_Vn1(V:mL, V0, V30):
     Vn1 = (V-V0)/(V30-V0)
     return Vn1
@@ -155,7 +155,7 @@ def Vn1_to_Vn2_2(Vn1, V30_V0):
     return Vn2
 
 
-"(06 Handle array)"
+# Handle array
 
 def find_index(v,v0):
     """
@@ -185,7 +185,7 @@ def to_equalx_data(x_want,x,y):
     y_new = [y[i] for i in index]
     return x_new,y_new
 
-"(07 EDPVR Famous Models)"
+# EDPVR Famous Models
 def klotz_curve(Vn1, A, B): 
     """
     Vn (1)
