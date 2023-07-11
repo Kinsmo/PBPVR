@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Input parameters
+# Input Parameters
 
-# 1 sarcomere parameter
+# 1 Sarcomere Parameter
 lamd_0=1.58/1.85
 
 # 2 Normalized Thickness
