@@ -30,8 +30,8 @@ Ta = 75 #[kPa]
 Ta = kpa_to_mmhg(Ta)
 
 # 5 Ratio of passive and active parts
-# "r_active = 0 yiels EDPVR"
-# "r_passive = 1, r_active = 1 yiels ESPVR"
+# "r_active = 0 yields EDPVR"
+# "r_passive = 1, r_active = 1 yields ESPVR"
 
 # Input Volumes
 vn2_esv = np.arange(0.52,1.2,0.01)
