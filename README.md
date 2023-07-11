@@ -1,7 +1,7 @@
 # PBPVR
 Physics-based pressure-volume relationship (PBPVR) model for heart research.
 
-Author: Yunxiao Zhang and Yong Wang
+Author: Yunxiao Zhang, Moritz Kalhöfer-Köchling, Eberhard Bodenschatz, and Yong Wang
 
 Email: yunxiao9277@gmail.com; yong.wang@ds.mpg.de
 
