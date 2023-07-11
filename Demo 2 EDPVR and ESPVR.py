@@ -53,6 +53,6 @@ plt.ylabel(r"Pressure ($mmHg$)")
 plt.legend(loc="upper right")
 
 
-plt.savefig("Demo 02 EDPVR and ESPVR generated from PBPVR model")
+plt.savefig("Demo 2 EDPVR and ESPVR generated from PBPVR model")
 plt.show()
 
