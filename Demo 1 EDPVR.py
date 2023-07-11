@@ -25,7 +25,7 @@ a = 1 #[kPa]
 a = kpa_to_mmhg(a)
 b = 3.8
 
-# 4 Contractity
+# 4 Contractility
 Ta = 50 #[kPa]
 Ta = kpa_to_mmhg(Ta)
 
