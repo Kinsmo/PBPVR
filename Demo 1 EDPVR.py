@@ -30,8 +30,8 @@ Ta = 50 #[kPa]
 Ta = kpa_to_mmhg(Ta)
 
 # 5 Ratio of passive and active parts
-# "r_active = 0 yieds EDPVR"
-# "r_passive = 1, r_active = 1 yieds ESPVR"
+# "r_active = 0 yields EDPVR"
+# "r_passive = 1, r_active = 1 yields ESPVR"
 r_passive = 1
 r_active = 0
 
