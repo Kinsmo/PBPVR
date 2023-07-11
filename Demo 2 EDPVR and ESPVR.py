@@ -12,28 +12,26 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Input parameters
+# Input Parameters
 
-# Sarcomere parameter
+# 1 Sarcomere Parameter
 lamd_0=1.58/1.85
 
-# Normalized Thickness
+# 2 Normalized Thickness
 D = 0.27
 
-# Passive Property
+# 3 Passive Property
 a = 1 #[kPa]
 a = kpa_to_mmhg(a)
 b = 3.8
 
-# Contractity
+# 4 Contractity
 Ta = 75 #[kPa]
 Ta = kpa_to_mmhg(Ta)
 
-# Ratio of passive and active parts
+# 5 Ratio of passive and active parts
 # "r_active = 0 yiels EDPVR"
 # "r_passive = 1, r_active = 1 yiels ESPVR"
-
-
 
 # Input Volumes
 vn2_esv = np.arange(0.52,1.2,0.01)
@@ -44,14 +42,12 @@ plt.plot(vn2_edv,p,lw=4,color=colors[0],label=f"EDPVR")
 p= [PBPVR(v,D,a,b,Ta,1,1) for v in vn2_esv] #[mmHg]
 plt.plot(vn2_esv,p,lw=4,color=colors[1],label=f"ESPVR")
 
-
 # Plot
 plt.axvline(1,color='k')
 plt.axhline(0,color='k')
 plt.xlabel(r"Normalized Volume ($V/V_0$)")
 plt.ylabel(r"Pressure ($mmHg$)")
 plt.legend(loc="upper right")
-
 
 plt.savefig("Demo 2 EDPVR and ESPVR generated from PBPVR model")
 plt.show()
