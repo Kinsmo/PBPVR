@@ -9,4 +9,4 @@ Physics-based pressure-volume relationship (PBPVR) model for heart research.
 
 **Example Output**:
 
-![alt text](https://github.com/Kinsmo/PBPVR/blob/main/Demo 1 EDPVR generated from PBPVR model.png?raw=true)
+![EDPVR Example](https://github.com/Kinsmo/PBPVR/blob/main/Demo%201%20EDPVR%20generated%20from%20PBPVR%20model.png?raw=true)
